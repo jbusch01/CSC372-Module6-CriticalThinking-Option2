@@ -15,14 +15,14 @@ public class StudentList {
         students.add(new Student(6, "Jeremy Smith", "826 Starlight Lane"));
         students.add(new Student(8, "Allen Woody", "135 Your Moms Street"));
 
-        System.out.println("Before Sorting:");
+        System.out.println("Before Sorting:\n");
         for (Student s : students) {
             System.out.println(s + "\n");
         }
 
         MergeSort.mergeSort(students, new RollNoComparator());
 
-        System.out.println("After sorting by roll number:");
+        System.out.println("After sorting by roll number:\n");
         for (Student s : students) {
             System.out.println(s + "\n");
         }
