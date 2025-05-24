@@ -17,8 +17,14 @@ public class StudentList {
 
         System.out.println("Before Sorting:");
         for (Student s : students) {
-            System.out.println(s);
-            System.out.println();
+            System.out.println(s + "\n");
+        }
+
+        MergeSort.mergeSort(students, new RollNoComparator());
+
+        System.out.println("After sorting by roll number:");
+        for (Student s : students) {
+            System.out.println(s + "\n");
         }
     }
 }
